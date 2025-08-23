@@ -14,15 +14,12 @@ Check [kinematic page](./doc/kinematic.md) for more information about this kinem
 
  You can find sample config at [sample config page](./doc/config.md)
 
- If you have any questions or suggestions, feel free to ask on our [SnakeOilXY discord](https://discord.gg/WZVP2HuAag)
-
-
 ## 3. Installation
 
 Install kinematic file
 <pre>
 cd ~
-git clone https://github.com/SnakeOilXY/klipper-extended-corexy-kinematic
+git clone https://github.com/Bradford1040/klipper-extended-corexy-kinematic
 cd klipper-extended-corexy-kinematic
 ./install.sh
 </pre>

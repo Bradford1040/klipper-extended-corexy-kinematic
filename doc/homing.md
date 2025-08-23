@@ -1,16 +1,16 @@
-# Homing squence
+# Homing sequence
 
-As addressed in [kinematic page](./kinematic.md), extended-coreXY design an address gantry skew problem of traditional CoreXY, but require special homing squence.
+As addressed in [kinematic page](./kinematic.md), extended-coreXY design an address gantry skew problem of traditional CoreXY, but require special homing sequence.
 
 
 ![homing](./homing.jpg)
 
-- For example, we have skewed gantry like in fig.1 and we home Y axis with independ endtops C0 and C1 on the front.
+- For example, we have skewed gantry like in fig.1 and we home Y axis with independent endstops C0 and C1 on the front.
 - C0 switch will trigger first
 - To trigger C1, C1 motor with short belt path will pull and force the gantry square.
 - We have square gantry now, but the inner belt path (A and B) will be in unbalance state because they are force pulled by the C1 motor and belt. 
 
-To fix the unbalenced belt problem we need the following homing squence.
+To fix the unbalanced belt problem we need the following homing sequence.
 
 - Home X axis
 - Move toolhead to middle of the X axis (so the distance between toolhead and motor of A and B somewhat equal)
@@ -30,7 +30,7 @@ gcode:
     ; home X axis
     G28 X
 
-    ; move toolhed to middle of x axis
+    ; move toolhead to middle of x axis
     G90
     G0 X220 F10000
 
